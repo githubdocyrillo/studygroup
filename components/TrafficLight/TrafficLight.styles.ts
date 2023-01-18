@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export type Color = "red" | "green" | "yellow";
-
-export const Light = styled.button<{ color: Color; actived?: boolean }>`
+export const Light = styled.button<{ color: string; actived?: boolean }>`
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -12,7 +10,7 @@ export const Light = styled.button<{ color: Color; actived?: boolean }>`
   background: ${({ color, actived }) => (actived ? color : "gray")};
 `;
 
-export const TraficLight = styled.div`
+export const TrafficLight = styled.div`
   display: flex;
   height: 100vh;
   flex-direction: column;

@@ -2,8 +2,8 @@ import { NextPage } from "next";
 import React, { useState } from "react";
 import {
   Light,
-  TraficLight,
-} from "../../components/TraficLight/TraficLight.styles";
+  TrafficLight,
+} from "../../components/TrafficLight/TrafficLight.styles";
 
 enum TraficLightState {
   STOP = "red",
@@ -26,10 +26,10 @@ const UseReducerSample: NextPage = () => {
   );
 
   return (
-    <TraficLight>
+    <TrafficLight>
       <h1>GO</h1>
       {Object.values(TraficLightState).map(map)}
-    </TraficLight>
+    </TrafficLight>
   );
 };
 
